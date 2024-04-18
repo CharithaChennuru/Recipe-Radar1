@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian Foods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/images/veg.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+        }
+
+        header {
+            background-color: transparent;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .food-item {
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            
+        }
+        .food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.food-item:hover h2 {
+    color: wheat; /* Change text color on hover */
+}
+.food-item:hover button{
+            background-color: wheat;
+            color: black;
+        }
+
+        .food-item h2 {
+            margin-top: 0;
+            color: whitesmoke;
+        }
+        .food-item p {
+            margin-bottom: 10px;
+            color: ghostwhite;
+        }
+
+        .food-item img {
+            border-radius: 4px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 14px;
+            padding: 4px 8px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+        .photo{
+            max-width:100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vegetarian Foods</h1>
+    </header>
+    <div class="container">
+        <div class="food-item">
+            <h2>Coconut Rice</h2>
+            <p>Coconut rice is a dish made from rice cooked with coconut milk or coconut flakes, which gives it a rich and aromatic flavor</p>
+            <img src="images/CR.webp" alt="Fish Tacos">
+            <a href="Coconut.html"><button>Process</button></a>
+        </div>
+
+        <div class="food-item">
+            <h2>Mango Rice</h2>
+            <p>Mango rice, also known as Mamidikaya Pulihora in Telugu cuisine, is a popular South Indian dish made with cooked rice, raw mango, and a blend of spices</p>
+            <img src="images/Mango.jpg" alt="Fruit-Vegetable salad" >
+            <a href="Mango.html"><button>Process</button></a>
+        </div>
+
+        <div class="food-item">
+            <h2>Bisi Bille badh</h2>
+            <p>Bisi bele bath is a traditional South Indian dish from Karnataka, known for its rich and flavorful preparation.</p>
+            <img src="images/BISS.jpg" alt="">
+            <a href="Bisi.html"><button>Process</button></a>
+        </div>
+    </div>
+</body>
+</html>

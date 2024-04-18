@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes-Friendly Food Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/images/Nveg.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: transparent;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .food-item {
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.food-item:hover h2 {
+    color: black; /* Change text color on hover */
+}
+
+        .food-item h2 {
+            margin-top: 0;
+            color: white;
+        }
+
+        .food-item p {
+            margin-bottom: 10px;
+            color: ghostwhite;
+        }
+        .food-item:hover button{
+            background-color: black;
+            color: white;
+        }
+
+        .food-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 14px;
+            padding: 4px 8px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Non-vegetarian Foods</h1>
+    </header>
+
+    <div class="container">
+        <div class="food-item">
+            <h2>Sushi and Sashimi</h2>
+            <p>Sashimi is a Japanese dish consisting of thinly sliced raw fish or seafood, served without rice. It is typically accompanied by soy sauce and wasabi</p>
+            <img src="images/fish.jpg" alt="Grilled Chicken Salad">
+            <a href="Sushi.html"><button>Process</button></a>
+        </div>
+
+        <div class="food-item">
+            <h2>Chicken Biriyani</h2>
+            <p>Chicken biryani is a classic Indian dish that features spiced chicken and fragrant rice cooked together to create a flavorful and aromatic meal</p>
+            <img src="images/CB.jpg" alt="">
+            <a href="b.html"><button>Process</button></a>
+            
+        </div>
+
+        <div class="food-item">
+            <h2>Mutton Curry Puffs</h2>
+            <p>Mutton curry cuffs, also known as Mutton Kofta Curry, are a flavorful dish from Indian cuisine.</p>
+            <img src="images/mutton.jpg" alt="Salmon with Asparagus">
+            <a href="mutton.html"><button>Process</button></a>
+        </div>
+    </div>
+</body>
+</html>

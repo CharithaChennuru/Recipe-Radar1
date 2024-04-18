@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Food Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/images/Rec.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: transparent;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .recommendation {
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .recommendation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation:hover h2 {
+    color: black; /* Change text color on hover */
+}
+
+        .recommendation h2 {
+            margin-top: 0;
+            color: ghostwhite;
+        }
+
+        .recommendation p {
+            margin-bottom: 10px;
+        }
+
+        .recommendation img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 14px;
+            padding: 4px 8px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+
+        .health-form {
+            margin-top: 40px;
+            margin-bottom: 30px;
+
+        }
+
+        .health-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .health-form input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .health-form button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .recommendation:hover button{
+            background-color: black;
+            color: white;
+        }
+        img{
+            width: 100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Recipes Menu</h1>
+    </header>
+
+    <div class="container">
+        <div class="health-form">
+            <h2>Find The Recipes Accoding To Your Mood</h2>
+            <form id="healthForm" action="#">
+                <label for="health_condition">Let's enter your fav:</label>
+                <input type="text" id="health_condition" name="health_condition" placeholder="e.g.,veg,nonveg etc." required>
+                <button type="submit">Find Recipe</button>
+            </form>
+        </div>
+        <div class="recommendation">
+            <h2>Coconut Rice</h2>
+            <p>Coconut rice is a dish made from rice cooked with coconut milk or coconut flakes, which gives it a rich and aromatic flavor</p>
+            <img src="images/CR.webp" alt="Coconut Rice">
+            <a href="Coconut.html"><button>Process</button></a>
+        </div>
+
+        <div class="recommendation">
+            <h2>Sushi and Sashimi</h2>
+            <p>Sashimi is a Japanese dish consisting of thinly sliced raw fish or seafood, served without rice. It is typically accompanied by soy sauce and wasabi</p>
+            <img src="images/fish.jpg" alt="Sushi">
+            <a href="Sushi.html"><button>Process</button></a>
+        </div>
+
+        <div class="recommendation">
+            <h2>Veg-salad</h2>
+            <p>Making a fresh salad is quite simple and versatile. You can use a variety of vegetables, fruits, nuts, seeds, and dressings to create a salad that suits your taste. Here's a basic guide:</p>
+            <img src="images/Veg salad.jpg" alt="salad">
+            <a href="vegsalad.html"><button>Process</button></a>
+            
+        </div>
+
+        
+    </div>
+
+    <script>
+        document.getElementById("healthForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var healthCondition = document.getElementById("health_condition").value.toLowerCase();
+            if (healthCondition === "veg") {
+                window.location.href = "veg.html";
+            } else if (healthCondition === "nonveg") {
+                window.location.href = "nonveg.html";
+            } else {
+                alert("Sorry, we currently do not have specific recommendations for this health condition.");
+            }
+        });
+    </script>
+</body>
+</html>
